@@ -1,0 +1,74 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName wizardjhipster
+    blueprints []
+    buildTool maven
+    cacheProvider redis
+    clientFramework react
+    clientPackageManager npm
+    clientTheme yeti
+    creationTimestamp 1697429861812
+    databaseType sql
+    devDatabaseType mysql
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation true
+    jhiPrefix jhi
+    languages [en]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName my.codebridge.community.wizardjhipster
+    prodDatabaseType mysql
+    reactive true
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    skipClient false
+    skipUserManagement false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+
+  entities String, Integer, Input
+}
+
+entity String {
+  stringText String
+  stringInput String
+  stringIcon String
+  stringImage String
+  stringAvatar String
+  stringChip String
+  stringTag String
+}
+entity Integer {
+  name Integer
+}
+entity Input {
+  long Long
+  bigDecimal BigDecimal
+  Float Float
+  Double Double
+  Enum Enum
+  boolean Boolean
+  LocalDate LocalDate
+  ZonedDate ZonedDateTime
+  Instant Instant
+  Duration Duration
+  UUID UUID
+  blob Blob
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+
